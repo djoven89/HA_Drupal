@@ -2,16 +2,16 @@
 
 Antes de comenzar a ejecutar constainers, habrá que tener claras las direcciones IP para cada container:
 
-1. ** Database ->** 172.20.0.18
-2. ** Load balancer ->** 172.20.0.19
-3. ** Drupal ->** 172.20.0.20, 172.20.0.21, 172.20.0.22
+1. *Database ->* 172.20.0.18
+2. *Load balancer ->* 172.20.0.19
+3. *Drupal ->* 172.20.0.20, 172.20.0.21, 172.20.0.22
 
 También habrá que crear los siguientes volúmenes para que el almacenamiento sea persistente:
 
 - ** Database -> ** db_data **->** /var/lib/mysql
 - ** Drupal -> ** drupal_data **->** /var/www/html
 
-** El primer paso será crear una red (no es necesario) , pero así se tiene seguridad en que las direcciones IP no están en uso: **
+**El primer paso será crear una red (no es necesario) , pero así se tiene seguridad en que las direcciones IP no están en uso:**
 
     docker network create --subnet=172.20.0.0/24 stack_drupal
 
