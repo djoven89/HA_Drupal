@@ -6,7 +6,7 @@
 2. **Load balancer ->** 172.20.0.19
 3. **Drupal ->** 172.20.0.20, 172.20.0.21, 172.20.0.22
 
-**También habrá que crear los siguientes volúmenes para que el almacenamiento sea persistente:
+**También habrá que crear los siguientes volúmenes para que el almacenamiento sea persistente:**
 
 - **Database ->** db_data **->** /var/lib/mysql
 - **Drupal ->** drupal_data **->** /var/www/html
